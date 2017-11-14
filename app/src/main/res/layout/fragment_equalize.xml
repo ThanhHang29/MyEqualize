@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:text="@string/tv_60Hz"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_60Hz"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:text="@string/tv_150Hz"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_150Hz"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:text="@string/tv_400Hz"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_400Hz"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:text="@string/tv_1KHz"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_1KHz"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:text="@string/tv_2KHz"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_2.4Hz"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:text="@string/tv_15KHz"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_15KHz"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="70dp"
+                android:text="@string/tv_gain"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_gain"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="70dp"
+                android:text="@string/tv_wet_or_dry"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:id="@+id/sb_wet_or_dry"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/rv_recyclerview"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

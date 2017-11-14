@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyEqualize</string>
+    <string name="tv_60Hz">60Hz</string>
+    <string name="tv_150Hz">150Hz</string>
+    <string name="tv_400Hz">400Hz</string>
+    <string name="tv_1KHz">1KHz</string>
+    <string name="tv_2KHz">2.4KHz</string>
+    <string name="tv_15KHz">15KHz</string>
+    <string name="tv_gain">Gain</string>
+    <string name="tv_wet_or_dry">Wet/Dry</string>
+    <string name="none">None</string>
+    <string name="normal">Normal</string>
+    <string name="acoutic">Acoutic</string>
+    <string name="bass_booster">Bass booster</string>
+    <string name="bass_reducer">Bass reducer</string>
+    <string name="classical">Classical</string>
+    <string name="dance">Dance</string>
+    <string name="deep">Deep</string>
+    <string name="electronic">Electronic</string>
+    <string name="hip_hop">Hip hop</string>
+    <string name="jazz">Jazz</string>
+    <string name="latin">Latin</string>
+    <string name="loudness">Loudness</string>
+</resources>

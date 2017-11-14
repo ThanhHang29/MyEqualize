@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to Equalize"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <com.ttth.view.EqualizerView
+        android:id="@+id/equalizer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:barColor="@color/colorAccent"
+        app:barWidth="2dp"
+        app:runInBatterySaveMode="true"
+        tools:layout_width="50dp"
+        tools:background="@color/colorAccent"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/tv_bar_count_seekbar"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv_bar_count_seekbar"
+        android:layout_above="@+id/sb_bar_count_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bar Count: 1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <SeekBar
+        android:id="@+id/sb_bar_count_seekbar"
+        android:layout_above="@+id/tv_animation_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:max="200"
+        android:progress="40" />
+    <TextView
+        android:id="@+id/tv_animation_duration"
+        android:layout_above="@+id/sb_animation_duration_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Animation Duration: 2000 "
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <SeekBar
+        android:id="@+id/sb_animation_duration_seekbar"
+        android:layout_above="@+id/bar_width_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:max="100"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/bar_width_textview"
+        android:layout_above="@+id/sb_bar_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar Width 1dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_start"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/sb_bar_width"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="start"
+        android:id="@+id/btn_start"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="next"
+        android:id="@+id/btn_next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="stop"
+        android:id="@+id/btn_stop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
